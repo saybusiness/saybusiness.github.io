@@ -11,15 +11,18 @@
   </head>
   <body onload="popup()">
     <h1>PayPal Gen v2</h1>
-    <div class="image animated fadeInLeft"><img class="icon" src="files/paypal.png" width="45rem" height="45rem"></div><span><a>Random Accounts</a><br><b>New account are generated daily from all around the world.</b></span><br><br>
-    <div class="image animated fadeInLeft slow"><img class="icon" src="files/settings.png" width="45rem" height="45rem"></div><span><a>New Algorithm</a><br><b>Service updated for 2020 and is more stable than before.</b></span><br><br>
-    <div class="image animated fadeInLeft slower"><img class="icon" src="files/money.png" width="45rem" height="45rem"></div><span><a>Balance Included</a><br><b>You can choose to generate accounts with balance up to $10.</b></span><br><br>
+    <div class="image animated fadeInLeft"><img class="icon" src="files/paypal.png" width="45rem" height="45rem"></div><span><a class="one">Random Accounts</a><br><b>New account are generated daily from all around the world.</b></span><br><br>
+    <div class="image animated fadeInLeft slow"><img class="icon" src="files/settings.png" width="45rem" height="45rem"></div><span><a class="one">New Algorithm</a><br><b>Service updated for 2020 and is more stable than before.</b></span><br><br>
+    <div class="image animated fadeInLeft slower"><img class="icon" src="files/money.png" width="45rem" height="45rem"></div><span><a class="one">Balance Included < NEW!</a><br><b>You can choose to generate accounts with balance up to $30.</b></span><br><br>
     <br><div class="animated fadeInUp" style="text-align:center;"><a href="http://bit.ly/2HHZ93m" class="button">Generate</a></div>
-    <div class="popup animated slideInLeft delay-2s"><a>Last PayPal From:</a> <b id="output"></b>📍</div>
+    <div class="popup animated slideInLeft delay-2s"><a class="one">Last PayPal From:</a> <b id="output"></b>📍</div>
     <script>
     var cities = ['Texas', 'California', 'New York', 'Florida', 'London', 'Germany', 'Rome', 'Oregon', 'Moscow', 'Hong Kong', 'Tokyo', 'Melbourne', 'Sydney', 'Estonia', 'India', 'Toronto', 'Jacksonville', 'Los Angeles', 'Warsaw', 'Berlin', 'Athens', 'Greece', 'Paris'];
     var city = cities[Math.floor(Math.random()*cities.length)];
     document.getElementById("output").innerHTML = city.toString();
     </script>
   </body>
+  <footer>
+    <div class="smol"><a class="smol" href="privacy.html">Privacy</a> | <a class="smol" href="about.html">About</a></div>
+  </footer>
  </html>
