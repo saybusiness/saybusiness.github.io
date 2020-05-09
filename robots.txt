@@ -1,0 +1,6 @@
+Sitemap: https://paypals2020.com/sitemap.xml
+User-agent: *
+Disallow: /files/
+Disallow: done.html
+Disallow: error.html
+Disallow: generating.html
