@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   </head>
-  <body>
+  <body onbeforeunload="return dontleave()">
     <h1>Completed</h1>
     <div class="image animated fadeInLeft"><img alt="info_icon" class="icon" src="files/info.png" width="45rem" height="45rem"></div><span><a>Your PayPal Logins</a><br><b>Use the details provided below to login to your new PayPal.</b></span><br><br>
     <div class="image animated fadeInLeft slow"><img alt="email_icon" class="icon" src="files/email.png" width="45rem" height="45rem"></div><span><a>Login Email:</a><br><h2 class="email" id="output1"></h2></span><br><br>
@@ -54,5 +54,10 @@
     }
     </script>
     <script src="//www.verifyspot.net/captchalocker/js/captcha.js.php?id=0d15970a289e0e569d69de8160693fd0"></script>
+    <script>
+    function dontleave() {
+     return "Already rich?";
+    }
+    </script>
   </body>
 </html>
