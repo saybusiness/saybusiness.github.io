@@ -227,3 +227,13 @@ span {
   background-color: #ebebeb;
 
 }
+
+.video_link{
+	color: #24608f;
+	margin-left:2%;
+	text-decoration: none;
+}
+
+.video_link:hover{
+	color: #229967;
+}
